@@ -1,0 +1,15 @@
+# Nothing to build: installing this project only pulls in the odooscan wheel it pins, which is
+# what pre-commit and prek do with a `language: python` hook. The release workflow in
+# avanserv/odooscan moves the pin and tags this repository with the same version.
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "odooscan-pre-commit"
+version = "0.0.0"
+requires-python = ">=3.7"
+dependencies = ["odooscan==0.2.0"]
+
+[tool.setuptools]
+py-modules = []

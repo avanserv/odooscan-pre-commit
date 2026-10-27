@@ -1,0 +1,11 @@
+# The index needs whole modules, so the hook scans the repository rather than the staged files,
+# and runs whenever a file odooscan reads changes.
+- id: odooscan
+  name: odooscan
+  description: "Check Odoo modules against an index of every module they build on."
+  entry: oscn check
+  language: python
+  pass_filenames: false
+  types_or: [python, xml, csv]
+  require_serial: true
+  minimum_pre_commit_version: "2.9.2"

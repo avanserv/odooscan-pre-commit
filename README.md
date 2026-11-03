@@ -7,7 +7,7 @@ modules. It installs odooscan's prebuilt wheel from PyPI, so you don't need a Ru
 ```yaml
 repos:
   - repo: https://github.com/avanserv/odooscan-pre-commit
-    rev: v0.8.1
+    rev: v0.9.0
     hooks:
       - id: odooscan
 ```
